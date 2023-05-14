@@ -1,5 +1,5 @@
 :root {
-  --blue: #007bff;
+  --blue: #0d73e0;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -8,11 +8,11 @@
   --yellow: #ffc107;
   --green: #28a745;
   --teal: #20c997;
-  --cyan: #17a2b8;
+  --cyan: #177988;
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #009CFF;
+  --primary: #31c5ff;
   --secondary: #F3F6FF;
   --success: #28a745;
   --info: #17a2b8;
@@ -54,7 +54,7 @@ body {
   line-height: 1.5;
   color: #818491;
   text-align: left;
-  background-color: #252323;
+  background-color: #151616;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -528,6 +528,16 @@ mark,
   height: auto;
   border-radius: 30px;
 }
+
+
+.img-fluid2 {
+  max-width: 100%;
+  min-height: 500px;
+  height: auto;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+} 
+
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -1871,6 +1881,13 @@ pre code {
   border: 0;
 }
 
+
+.control-group label{
+  position: absolute;
+  transform: translateY(-100);
+  
+}
+
 .form-control {
   display: block;
   width: 100%;
@@ -1879,7 +1896,7 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: #666a6b;
   background-color: #fff;
   background-clip: padding-box;
   border: 2px solid #ced4da;
@@ -1904,16 +1921,17 @@ pre code {
 }
 
 .form-control:focus {
-  color: #495057;
+  color: #929699;
   background-color: #fff;
   border-color: #80ceff;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 156, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 157, 255, 0.726);
 }
 
 .form-control::placeholder {
-  color: #6c757d;
+  color: #bccad600;
   opacity: 1;
+
 }
 
 .form-control:disabled, .form-control[readonly] {
@@ -2320,7 +2338,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #818491;
+  color: #7a7e91;
   text-align: center;
   vertical-align: middle;
   user-select: none;
@@ -2364,22 +2382,22 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #009CFF;
-  border-color: #009CFF;
+  color: #cac5c5;
+  background-color: #39779e;
+  border-color: #64c4ff;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0085d9;
+  background-color: #0994eb9f;
   border-color: #007dcc;
 }
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #0085d9;
-  border-color: #007dcc;
-  box-shadow: 0 0 0 0.2rem rgba(38, 171, 255, 0.5);
+  background-color: #0086d979;
+  border-color: #209ae64b;
+  box-shadow: 0 0 0 0.2rem rgba(38, 171, 255, 0.4);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
@@ -2586,15 +2604,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-light {
-  color: #212529;
-  background-color: #FFFFFF;
-  border-color: #FFFFFF;
+  color: #cdd2d6;
+  background-color: #30409bb9;
+  border-color: #3449a5;
 }
 
 .btn-light:hover {
-  color: #212529;
-  background-color: #ececec;
-  border-color: #e6e6e6;
+  color: #e6e6e6;
+  background-color: #384eceb9;
+  border-color: #3472e4;
 }
 
 .btn-light:focus, .btn-light.focus {
@@ -5459,10 +5477,11 @@ a.close.disabled {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: #1F2020;
   background-clip: padding-box;
   border: 2px solid rgba(0, 0, 0, 0.2);
   outline: 0;
+  border-radius: 13px;
 }
 
 .modal-backdrop {
@@ -6105,7 +6124,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #F3F6FF !important;
+  background-color: #2E2E2E !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -7378,7 +7397,7 @@ button.bg-dark:focus {
 
 .mr-2,
 .mx-2 {
-  margin-right: 0.5rem !important;
+  margin-right: 0.7rem !important;
 }
 
 .mb-2,
@@ -9289,6 +9308,10 @@ a.text-secondary:hover, a.text-secondary:focus {
   color: #28a745 !important;
 }
 
+.red-cicle{
+
+}
+
 a.text-success:hover, a.text-success:focus {
   color: #19692c !important;
 }
@@ -9580,11 +9603,13 @@ h4, h5, h6 {
 .gallery-item {
   position: relative;
   overflow: hidden;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .product-img img,
 .gallery-item img {
-  transition: .5s;
+  transition: .4s;
 }
 
 .product-item:hover img,
@@ -9610,12 +9635,15 @@ h4, h5, h6 {
 
 .product-item:hover a,
 .gallery-item:hover a {
-  opacity: 1;
+  opacity: .7;
 }
 
 .bg-gallery {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/gallery.jpg), no-repeat center center;
+  top: 100%;
   background-size: cover;
+  
+  
 }
 
 .gallery-carousel .owl-nav,
