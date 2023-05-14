@@ -5508,6 +5508,7 @@ a.close.disabled {
   justify-content: space-between;
   padding: 1rem 1rem;
   border-bottom: 2px solid #dee2e6;
+  background-color: #1F2020;
 }
 
 .modal-header .close {
